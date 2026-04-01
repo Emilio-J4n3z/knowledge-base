@@ -442,32 +442,6 @@ Archivo: `emacs/plantillas/plantilla-paper.org`
 * Siguiente acción
   - [ ] SCHEDULED: <%%(org-date-from-calendar)>
 ```
-
----
-
-## 🛠️ Fragmentos config.el (listos para copiar)
-
-Archivo: `emacs/config-snippets.el`
-
-```elisp
-;; ── Atajos rápidos para cambiar tema (SPC T) ─────────────────
-(map! :leader
-      :prefix ("T" . "temas")
-      :desc "Gruvbox (código)"    "g" (cmd! (load-theme 'doom-gruvbox t))
-      :desc "Tokyo Night (CTF)"   "t" (cmd! (load-theme 'doom-tokyo-night t))
-      :desc "Catppuccin (notas)"  "c" (cmd! (load-theme 'catppuccin t))
-      :desc "Doom One (neutro)"   "o" (cmd! (load-theme 'doom-one t)))
-
-;; ── Abrir PDFs con Zathura ────────────────────────────────────
-(add-to-list 'org-file-apps '("\\.pdf\\'" . "zathura %s"))
-
-;; ── Org agenda files ─────────────────────────────────────────
-(setq org-agenda-files
-      '("~/Documents/Clases/notas/inbox.org"
-        "~/Documents/Clases/notas/tareas.org"
-        "~/Documents/universidad/agenda.org"))
-```
-
 ---
 
 ## 🎯 Flujo de trabajo diario en Emacs
